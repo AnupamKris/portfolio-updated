@@ -6,7 +6,7 @@
       left: x + '%',
       width: width + 'px',
       height: width + 'px',
-      border: thickness + 'px solid #4baeffc7',
+      border: thickness + 'px solid #92929277',
     }"
   >
     <!-- <div
@@ -42,7 +42,7 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .decor {
-  border: 60px solid #4baeffc7;
+  border: 60px solid #92929277;
   background: inherit;
   border-radius: 40%;
   position: absolute;

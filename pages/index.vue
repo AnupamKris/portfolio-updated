@@ -84,6 +84,7 @@
       </div>
     </div>
   </div>
+  <div class="projects"></div>
 </template>
 
 <script setup>
@@ -161,10 +162,10 @@ onMounted(() => {
 
   .skillset {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
-
+    // height: ;
     width: 50%;
 
     h3 {
@@ -180,12 +181,11 @@ onMounted(() => {
 
   .skills {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    height: auto;
     width: 100%;
-    margin-top: 20px;
 
     h3 {
       width: 100%;
@@ -201,7 +201,7 @@ onMounted(() => {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-
+      flex-wrap: wrap;
       width: 100%;
     }
 
@@ -214,7 +214,7 @@ onMounted(() => {
       font-size: 18px;
       font-family: consolas;
       font-weight: 400;
-
+      margin-bottom: 10px;
       margin-right: 10px;
     }
   }
@@ -275,6 +275,52 @@ onMounted(() => {
   }
   100% {
     transform: translate(0px, -50vh);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .info {
+    // padding-left: 20px;
+    padding-right: 60px;
+    width: calc(100% - 60px);
+    .container {
+      flex-direction: column;
+      padding-right: 0px;
+    }
+
+    .bio {
+      width: 100%;
+      font-size: 18px;
+      padding-right: 0px;
+    }
+
+    .skillset {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .info {
+    padding: 0 25px;
+    width: 100%;
+
+    h1 {
+      font-size: 64px;
+    }
+    .container {
+      flex-direction: column;
+      padding-right: 0px;
+    }
+
+    .bio {
+      width: 100%;
+      font-size: 18px;
+      padding-right: 0px;
+    }
+
+    .skillset {
+      width: 100%;
+    }
   }
 }
 </style>

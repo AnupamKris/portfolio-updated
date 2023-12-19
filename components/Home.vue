@@ -160,4 +160,47 @@ const props = defineProps({
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .home {
+    .text {
+      justify-content: flex-start;
+      .bgtext {
+        font-size: 128px;
+        line-height: 300px;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+        padding: 0;
+        margin: 0;
+        bottom: 50px;
+        top: auto;
+        .flipper {
+          height: 100%;
+          z-index: 10;
+          overflow-y: visible;
+        }
+      }
+      .mtext {
+        height: auto;
+        width: 100%;
+        padding: 0 20px;
+        padding-top: 170px;
+
+        // display: flex;
+        // flex-direction: column;
+        span {
+          font-size: 72px;
+          line-height: 96px;
+        }
+      }
+      .subtext {
+        font-size: 12px;
+        line-height: 20px;
+        left: 15px;
+        // bottom: 50px;
+      }
+    }
+  }
+}
 </style>

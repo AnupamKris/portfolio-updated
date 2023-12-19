@@ -99,4 +99,10 @@ const changeTab = (index) => {
     height: 130px;
   }
 }
+
+@media (max-width: 600px) {
+  .sidenav {
+    display: none;
+  }
+}
 </style>
