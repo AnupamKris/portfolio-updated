@@ -176,7 +176,7 @@ const props = defineProps({
         bottom: 50px;
         top: auto;
         .flipper {
-          height: 100%;
+          height: 200px;
           z-index: 10;
           overflow-y: visible;
         }
